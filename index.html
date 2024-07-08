@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><img src="hidayatur.png"></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blog">Blogs</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="hidayatur.png" alt="">
+                <video autoplay muted loop id="vid">
+                    <source src="32975-394513987_small.mp4" type="video/mp4">
+                </video>
+                <p>A Journey For Iman</p>
+                <a href="#services" class="btn-primary">Pesan Sekarang</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Services Section -->
+    <section class="section">
+        <div class="container">
+            <h1 id="services">PENAWARAN TERBATAS</h1>
+            <div class="service">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="umrah plus.jpeg" alt="Image 1" class="gallery-image" onclick="openModal('image1.jpg')">
+                        <button class="gambar1"><a href="#pesan">Buat Pesanan</a></button>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="umrah pviate.png" alt="Image 2" class="gallery-image" onclick="openModal('image2.jpg')">
+                        <button class="gambar2"><a href="#pesan">Buat Pesanan</a></button>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="umroh express.png" alt="Image 3" class="gallery-image" onclick="openModal('image3.jpg')">
+                        <button class="gambar3"><a href="#pesan">Buat Pesanan</a></button>
+                    </div>
+                </div>
+    </section>
+    <!-- Testimoni -->
+     <center><h1>Testimoni</h1></center>
+     <main>
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonial">
+                    <img src="pp11.jpg" alt="Person 1">
+                    <blockquote>
+                        "Pelayanan nya luarbiasa cepat dan terpercaya."
+                    </blockquote>
+                    <cite>Yessken</cite>
+                </div>
+                <div class="testimonial">
+                    <img src="pp2.jpg" alt="Person 2">
+                    <blockquote>
+                        "Murah dan terpercaya."
+                    </blockquote>
+                    <cite>Zeta Kobokan</cite>
+                </div>
+                <div class="testimonial">
+                    <img src="pp3.jpg" alt="Person 3">
+                    <blockquote>
+                        "Pertama kali menggunakan jasa hidayatur, alhamdulillah hasil nya sesuai ekspetasi."
+                    </blockquote>
+                    <cite>Parji</cite>
+                </div>
+                <div class="testimonial">
+                    <img src="pp4.jpg" alt="Person 3">
+                    <blockquote>
+                        "Omaga pisan."
+                    </blockquote>
+                    <cite>Sanz kopi</cite>
+                </div>
+                <div class="testimonial">
+                    <img src="pp5.png" alt="Person 3">
+                    <blockquote>
+                        "Mantap."
+                    </blockquote>
+                    <cite>Lee pangsit</cite>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Blogs -->
+    <main>
+        <section class="posts" id="blog">
+            <h1>BLOG</h1>
+            <div class="container">
+                <article>
+                    <img src="blog1.jpg" alt="Post 1" class="gallery-image" onclick="openModal('image1.jpg')">
+                    <h2>Keutamaan Ibadah Umrah</h2>
+                    <p class="post-meta">Posted on January 1, 2024 by Mamat</p>
+                    <p>Haji merupakan amalan yang paling utama. Kedua: Jika ibadah haji tidak bercampur dengan dosa (syirik dan maksiat), maka balasannya adalah surga. Rasulullah shallallahu 'alaihi wa sallam bersabda, “Dan haji mabrur tidak ada balasan yang pantas baginya selain surga.” </p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article>
+                    <img src="blog2.png" alt="Post 2" class="gallery-image" onclick="openModal('image1.jpg')">
+                    <h2>Perlengkapan Umrah</h2>
+                    <p class="post-meta">Posted on January 2, 2024 by Samuel islam</p>
+                    <p>Kain ihram merupakan perlengkapan umroh pria yang wajib bagi jamaah pria saat beribadah umroh. Ketentuannya terdiri dari dua lembar kain tanpa jahitan yang digunakan untuk menutup aurat bagian atas dan bawah.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+                <article>
+                    <img src="blog3.jpg" alt="Post 3" class="gallery-image" onclick="openModal('image1.jpg')">
+                    <h2>Kota Madinah</h2>
+                    <p class="post-meta">Posted on January 3, 2024 by Dayat bageur</p>
+                    <p>Pada masa sebelum Islam berkembang, kota Madinah bernama Yatsrib, dikenal sebagai pusat perdagangan. Kemudian ketika Nabi Muhammad hijrah dari Mekkah, kota ini diganti namanya menjadi Madinah sebagai pusat perkembangan Islam sampai beliau wafat dan dimakamkan di sana.</p>
+                    <a href="#" class="btn">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container-input">
+            <h2 id="pesan">Contact Us</h2>
+            <form action="#" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-secondary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+   
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-content">
+          <h2>Contact Us</h2>
+          <p>If you have any questions or need assistance, feel free to reach out to us.</p>
+          <ul class="social-icons">
+            <li><a href="https://www.instagram.com/hidayatur.id/"><img src="igg.webp" alt="instagram" class="ig"></a></li>
+            <li><a href="https://www.tiktok.com/@hidayatur.id"><img src="tt.png" alt="Tiktok" class="tt"></a></li>
+            <li><a href="https://www.facebook.com/people/Hidaya-Tur/pfbid0QaUkGzFvkUTAC3wzZfPhh4f5aJVSJRLXiyeMJVTfcQavLqXRN67X3p8xztLP211Fl/"><img src="fb.png" alt="Facebook" class="fb"></a></li>
+            <li><a href="https://www.youtube.com/channel/UC0SVIXma-_XpEkJTr6Eg8Cg"><img src="yttt.png" alt="Youtube" class="yt"></a></li>
+          </ul>
+        </div>
+      </footer>
+
+</body>
+</html>
